@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquid Glass Precision Lens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="#" class="topnav__link">Hello</a>
+          <a href="#" class="topnav__link topnav__link--active">Blog</a>
+          <a href="#" class="topnav__link">CV</a>
+        </nav>
+      </header>
+
+      <p class="intro-copy">
+        It also plays with shadows and scaling to create a more dynamic, interactive effect.
+      </p>
+
+      <main class="demo-card" id="scene">
+        <div class="demo-card__copy">
+          <p class="eyebrow">Optics Study</p>
+          <h1>Liquid Glass<span>—</span><br />Precision Lens</h1>
+          <p>
+            Drag the capsule to bend the page. This lens is a compact SVG displacement rig that
+            refracts whatever sits beneath it.
+          </p>
+          <p>
+            The field comes from a rounded bezel profile; pixels are pushed along its gradient,
+            then topped with a subtle specular bloom for depth.
+          </p>
+          <p>Sweep across strong edges—high contrast makes the bend snap.</p>
+        </div>
+
+        <figure class="hero-photo">
+          <img
+            src="https://images.unsplash.com/photo-1579380656108-f98e4df8ea62?auto=format&fit=crop&q=80&w=900"
+            alt="A colorful frog climbing a bright flower stem"
+          />
+          <figcaption>Photo: Stephanie LeBlanc / Unsplash</figcaption>
+        </figure>
+
+        <div class="liquid-lens" id="lens" role="presentation" aria-hidden="true">
+          <div class="liquid-lens__shadow"></div>
+          <div class="liquid-lens__specular"></div>
+          <div class="liquid-lens__inner">
+            <div class="liquid-lens__content" id="lensContent"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <template id="sceneCloneTemplate">
+      <div class="demo-card demo-card--clone">
+        <div class="demo-card__copy">
+          <p class="eyebrow">Optics Study</p>
+          <h1>Liquid Glass<span>—</span><br />Precision Lens</h1>
+          <p>
+            Drag the capsule to bend the page. This lens is a compact SVG displacement rig that
+            refracts whatever sits beneath it.
+          </p>
+          <p>
+            The field comes from a rounded bezel profile; pixels are pushed along its gradient,
+            then topped with a subtle specular bloom for depth.
+          </p>
+          <p>Sweep across strong edges—high contrast makes the bend snap.</p>
+        </div>
+
+        <figure class="hero-photo">
+          <img
+            src="https://images.unsplash.com/photo-1579380656108-f98e4df8ea62?auto=format&fit=crop&q=80&w=900"
+            alt=""
+          />
+          <figcaption>Photo: Stephanie LeBlanc / Unsplash</figcaption>
+        </figure>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
